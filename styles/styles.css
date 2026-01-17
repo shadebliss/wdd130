@@ -11,6 +11,7 @@ main img{
     height: auto;
     padding: 1px;
     box-shadow: #eee;
+    border: 1px solid rgb(0 0 0 / 0.2);
 }
 aside{
     width: 20rem;
@@ -19,6 +20,7 @@ aside{
     background-color: #eee;
     color: #333;
     text-align: center;
+    padding: 1rem;
 }
 
 aside img{
@@ -35,4 +37,14 @@ footer{
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+nav{
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav a{
+    color: #eee;
+    padding: 1rem;
+    display: block;
 }
