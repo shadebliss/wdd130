@@ -1,3 +1,11 @@
+:root{
+    --primary_color: darkblue;
+    --secondary_color: #eee;
+    --tertiary_color:#000;
+    --primary_padding: 1rem;
+    --secondary_padding: 1px;
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,13 +16,13 @@ main{
 }
 
 h1{
-    color: darkblue;
+    color: var(--primary_color);
 }
 
 main img{
     width: 150px;
     height: auto;
-    padding: 1px;
+    padding: var(--secondary_padding);
     box-shadow: 5px 5px 10px gray;
     border: 1px solid rgb(0 0 0 / 0.2);
     float: right;
@@ -38,7 +46,7 @@ aside h2{
 }
 p{
     padding: 0;
-    color: darkblue;
+    color: var(--primary_color);
 }
 
 footer{
@@ -48,12 +56,12 @@ footer{
 }
 nav{
     background-color: rgb(97, 97, 193);
-    padding: 1rem;
+    padding: var(--primary_padding);
 }
 
 nav a{
-    color: #eee;
-    padding: 1rem;
+    color: var(--secondary_color);
+    padding: var(--primary_padding);
     display: block;
 }
 
@@ -61,7 +69,7 @@ nav a{
 .box{
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1rem;
+    padding: var(--primary_padding);
     background-color: #ddd;
-    color: #000;
+    color: var(--tertiary_color);
 }
