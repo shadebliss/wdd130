@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)https://byui-cse.github.io/wdd130-ww-course/week04/prepare-css-grid.html -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 130 | CSS Layouts: Grid</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://byui-cse.github.io/cse-ww-program/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://byui-cse.github.io/cse-ww-program/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="https://byui-cse.github.io/cse-ww-program/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./WDD 130 _ CSS  Grid W4_files/css2" rel="stylesheet">
+  <link rel="stylesheet" href="./WDD 130 _ CSS  Grid W4_files/course.css">
+  <link rel="stylesheet" href="./WDD 130 _ CSS  Grid W4_files/vs2015.min.css">
+  <script src="./WDD 130 _ CSS  Grid W4_files/ruxitagent_D_10327251022105625.js.download" defer="defer" crossorigin="anonymous"></script><script src="./WDD 130 _ CSS  Grid W4_files/692a19d31f48cd0e_complete.js.download" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>WDD 130<span id="coursetitle">: Web Fundamentals</span></h1>
+      <img src="./WDD 130 _ CSS  Grid W4_files/byui-logo.svg" alt="BYU-I logo" class="logo">
+    </div>
+  </header>
+
+  <main class="page">
+    <nav>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/">Home</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week01/">W1</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week02/">W2</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week03/">W3</a></span>
+      <span class="active"><a href="https://byui-cse.github.io/wdd130-ww-course/week04/">W4</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week05/">W5</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week06/">W6</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week07/">W7</a></span>
+    </nav>
+
+    <h2>W04 Learning Activity: CSS Grids</h2>
+    <h3>Overview</h3>
+    <p>CSS Grid Layout is a two-dimensional layout system for the web that allows you to arrange content content in rows
+      and columns. It includes many features that make building complex layouts straightforward. The goal of this
+      activity is for you to
+      understand the basic features of CSS Grid and how to use them to create layouts.</p>
+
+    <h3>Prepare</h3>
+    <p>CSS Grid is a powerful layout system that allows you to easily create complex web page layouts. Think of it as
+      drawing invisible lines on your webpage to create rows and columns, similar to how you might organize content in a
+      table or spreadsheet.</p>
+
+    <p>Please watch the following videos that introduce CSS Grid:</p>
+
+    <div class="video-container">
+      <iframe src="./WDD 130 _ CSS  Grid W4_files/1FyVcc1pIVU.html" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+      <p>Video Demonstration: ▶️ <a href="https://www.youtube.com/embed/1FyVcc1pIVU" target="_blank">Grid Layout
+          (Part 1 of 2)</a> – [7:15 mins, <a href="https://byui-cse.github.io/wdd130-ww-course/text/grid_layout_1.pdf" target="_blank" rel="noopener">Transcript</a>]</p>
+    </div>
+
+
+    <div class="video-container">
+      <iframe src="./WDD 130 _ CSS  Grid W4_files/e3_70BJglG4.html" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+      <p>Video Demonstration: ▶️ <a href="https://www.youtube.com/embed/e3_70BJglG4" target="_blank">Grid Layout (Part
+          2 of 2)</a> -
+        [5:59 mins, <a href="https://byui-cse.github.io/wdd130-ww-course/text/grid_2.pdf" target="_blank" rel="noopener">
+          Transcript</a>]</p>
+    </div>
+
+
+
+    <h4>Creating a Grid Layout</h4>
+    <p>As shown in the videos, to create a CSS Grid layout, you need to apply certain properties to the grid container,
+      which is the parent element that holds all your grid items. Then, the <strong>immediate</strong> children of that
+      parent container will respond to grid declarations (but grandchildren will not).</p>
+
+    <p>The most common grid properties are:</p>
+    <ul>
+      <li><strong>display: grid</strong> – Turns an element into a grid container</li>
+      <li><strong>grid-template-columns</strong> – Defines the number and size of columns</li>
+      <li><strong>grid-template-rows</strong> – Defines the number and size of rows</li>
+      <li><strong>gap</strong> – Sets the space between grid items</li>
+    </ul>
+
+    <h5>Defining Columns and Rows</h5>
+
+    <p>The <code>grid-template-columns</code> and <code>grid-template-rows</code> properties allow you to specify
+      exactly how your grid should be structured. You can use different units to control sizing, such as pixels (px),
+      percentages (%), or the flexible <code>fr</code> unit.</p>
+
+
+    <p>Common ways to define grid tracks:</p>
+    <ul>
+      <li><strong>Fixed sizes</strong> – Use pixels for exact measurements: <code>200px 150px 100px</code></li>
+      <li><strong>Flexible sizes</strong> – Use <code>fr</code> units to share available space: <code>1fr 2fr 1fr</code>
+      </li>
+      <li><strong>Mixed sizes</strong> – Combine different units: <code>200px 1fr 100px</code></li>
+      <li><strong>Repeat function</strong> – Use <code>repeat()</code> for repeated patterns:
+        <code>repeat(3, 1fr)</code>
+      </li>
+    </ul>
+
+    <p>Parent elements that contain a grid layout are given the <code>display: grid;</code> declaration. The
+      <strong>immediate</strong>
+      children of that parent container can then respond to grid declarations (but grandchildren cannot).
+    </p>
+
+
+    <h3>Activity Instructions</h3>
+    <ol>
+      <li>Complete this 28 lesson tutorial on CSS Grid: <a href="https://cssgridgarden.com/" target="_blank" rel="noopener">Grid Garden</a>.</li>
+    </ol>
+
+    <figure>
+      <img src="./WDD 130 _ CSS  Grid W4_files/gridgardenlevel25.png" alt="Screenshot of gridgarden.com Level 25" width="600">
+      <figcaption>Screenshot of a gridgarden.com Level</figcaption>
+    </figure>
+    <div class="callout reference">
+      <h4>Optional Resources</h4>
+      <ul>
+        <li><a href="https://www.w3schools.com/Cssref/pr_grid.php" target="_blank" rel="noopener">CSS Grid Property</a>
+          – w3schools.com</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids" target="_blank" rel="noopener">Grids</a> – MDN</li>
+      </ul>
+    </div>
+
+    <hr>
+    <nav>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week04/index.html">Week 04</a></span>
+    </nav>
+
+  </main>
+  <footer>
+    <p>Copyright © Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+  <script src="./WDD 130 _ CSS  Grid W4_files/highlight.min.js.download"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="./WDD 130 _ CSS  Grid W4_files/prevent-code-select.js.download"></script>
+
+
+</body></html>
