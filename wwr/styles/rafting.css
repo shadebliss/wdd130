@@ -16,6 +16,106 @@ body{
     color: var(--accent2_color);
 }
 
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 0.3rem;
+    background-color: lightblue;
+}
+header a{
+    text-decoration: none;
+    padding: 0.1px;
+    font-weight: bold;
+    margin: 0.9rem; 
+    border: 1px solid black;
+    padding: 5px;
+}
+
+header img{
+    margin-left: 3rem;
+    padding: 0.3rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.hero{
+    position: relative;
+    
+}
+
+.hero img{
+    width: 200px;
+    height: 150px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    gap: 20rem;
+}
+
+.socialmedia a {
+    display: inline-block;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: rem;
+    
+}
+
+.socialmedia img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+
+section{
+    text-align: center;
+} 
+
+h2{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+figure{
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+    width: 200px;
+}
+
+figure img{
+    width: 100%;
+    height: auto;
+}
+/* header, img{
+    position: relative;
+    right: 40px;
+    padding: 0.3rem;
+}
+
+header,nav, a{
+    position: relative;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    padding: 0.7rem;
+    color: white;
+    text-decoration: none;
+}
+
 header, main, footer{
     width: 840px;
     margin: 0 auto;
@@ -24,15 +124,12 @@ header, main, footer{
 h1, h2{
     font-family: var(--heading-font);
     color: var(--primary_color);
+    margin: 2px;
 }
 
 nav, p, section, article{
     margin: 16px;
     padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .hero{
@@ -43,12 +140,13 @@ nav, p, section, article{
     display: block;
     width: 100%;
     height: auto;
+    
 }
 
 h1{
     position: absolute;
     top: 20px;
-    width: 100%;
+    width: 70%;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
@@ -61,6 +159,15 @@ h1{
 }
 
 .hero article img{
-    float: right;
+    float: left;
     width: 125px;
 }
+footer{
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.socialmedia{
+} */ 
