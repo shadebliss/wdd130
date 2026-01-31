@@ -44,8 +44,9 @@ h1{
     text-align: center;
 }
 
-.hero{
+.hero article{
     position: relative;
+    float: right;
     
 }
 
@@ -67,9 +68,7 @@ footer{
 .socialmedia a {
     display: inline-block;
     margin-left: 15px;
-    text-decoration: none;
-    font-size: rem;
-    
+    text-decoration: none; 
 }
 
 .socialmedia img {
