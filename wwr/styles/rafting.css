@@ -62,7 +62,7 @@ header img{
     margin: 0 10px;
 }   
 
-.container2 {
+form {
     position: relative;
     /* border: 1px solid black; */
     height: 330px;
@@ -70,7 +70,7 @@ header img{
     width: 350px;
     padding: 15px;
 }
-.container2 textarea{
+form textarea{
     width: 270px;
     height: 40px;
     border-radius: 4px;
@@ -86,6 +86,7 @@ header img{
 
 .map{
     margin-top: 30px;
+    
 }
 
 .rad{
