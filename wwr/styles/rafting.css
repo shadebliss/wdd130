@@ -14,12 +14,12 @@
 body{
     font-family: var(--body_font);
     color: var(--accent2_color);
-    /* background-image: url("/wdd130/wwr/images/california-whitewater-hub.webp"); */
-    /* background-repeat: no-repeat;
+    background-image: grey;
+    background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-     */
+     
 }
 
 header{
@@ -41,6 +41,7 @@ header a{
     padding: 5px;
     border-radius: 5px;
     background-color: #ddd;
+    
 }
 h1{
     text-align: center;
@@ -128,6 +129,11 @@ section figcaption{
 
 .hero{
     position: relative;
+    
+}
+.hero a{
+    text-decoration: none;
+    
 }
 
 p{
