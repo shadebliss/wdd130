@@ -14,11 +14,11 @@
 body{
     font-family: var(--body_font);
     color: var(--accent2_color);
-    background-image: grey;
-    background-repeat: no-repeat; 
+    /* background-image: url(/wdd130/wwr/images/Bhutan-Po-and-Mo-Rivers-bg.jpg); */
+    /* background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center; */
      
 }
 
@@ -30,7 +30,7 @@ header{
     border: 1px solid black;
     border-radius: 5px;
     margin-bottom: 0.3rem;
-    background-color: lightblue;
+    background-color: rgb(228, 181, 243);
 }
 header a{
     text-decoration: none;
@@ -45,15 +45,68 @@ header a{
 }
 h1{
     text-align: center;
-    position: relative;
     /* color: white; */
+}
+h2{
+    text-align: center;
+}
+.imag{ 
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 100px;
+    padding-bottom: 60px;
+}
+
+.art{
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 10px;
+}
+.art img{
+    width: 200px;
+    height: 180px;
+    
+}
+.advent{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.advent p{
+    display: block;
+}
+
+section{
+    border: 1px solid black;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    gap: 20rem;
+    border: 1px solid black;
+    width: 78.5rem;
+    border-radius: 2px;
+    background-color: rgb(224, 172, 240);
+    margin: 20px 0 20px 0;
 }
 
 header img{
-    margin-left: 3rem;
-    padding: 0.3rem;
-    border-radius: 90px;
+        margin-left: 3rem;
+        padding: 0.3rem;
+        border-radius: 90px;
 }
+/*styling in contact us*/
 .container1{
     position: relative;
     display: flex;
@@ -61,6 +114,7 @@ header img{
     justify-content: space-around;
     align-items: center;
     margin: 0 10px;
+    
 }   
 
 form {
@@ -69,11 +123,22 @@ form {
     height: 330px;
     padding: 15px;
     width: 350px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: rgb(238, 203, 248);
 }
 form textarea{
     width: 270px;
     height: 40px;
     border-radius: 4px;
+    position: relative; 
+    resize: none;
+    max-width: 85%;
+    max-height: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    box-sizing: border-box;
+
 }
 
 .cont input{
@@ -99,14 +164,20 @@ form textarea{
     margin: 0 0 10px;
 }
 .rad input{
-    margin-left: -140px;
+    margin-left: -130px;
     padding: 0  0 10px;
     font-size: 15px;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .rad label{
     margin-right: 8rem;
     font-size: 15px;
+}
+
+.check{
+    font-size: 15px;
+    padding: 4px;
 }
 
 .sub button{
@@ -114,6 +185,13 @@ form textarea{
     height: 30px;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.sub button:hover{
+    background-color: rgb(199, 239, 239);
+    width: 290px;
 }
 section figure{
     position: relative;
@@ -123,33 +201,58 @@ section figure{
     width: 120px;
     background-color: gray;
 }
-section figcaption{
-    margin: 10px;
+.fig{
+    padding: 10px;
+    margin: 20px 0 20px 0;
 }
 
-.hero{
+.images{
     position: relative;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+figcaption{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.hero {
+    position: relative;
 }
 .hero a{
     text-decoration: none;
-    
 }
 
 p{
     text-align: center;
+    
 }
-
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    padding: 20px;
-    border-top: 1px solid #ddd;
-    gap: 20rem;
+.pic{
     border: 1px solid black;
-    width: 77.6rem;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 30px 0 40px 0;
+    
+}
+.pic h2{
+    /* text-align: center; */
+    position: relative;
+}
+.pic img{
+    float: right;
+    width: 200px;
+    height: 180px;
+    margin-top: -50px;
+    position: relative;
+}
+.pic p{
+    padding-top: -20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .socialmedia a {
@@ -166,10 +269,11 @@ footer{
 
 .sect{
     border: 1px solid black;
-    margin: 10px;
+    margin: 0 0 20px;
     padding: 9px;
-    width: 76.9rem;
+    width: 78.55rem;
     height: 220px;
+    border-radius: 5px; /* sect in contact us*/
 } 
 
 section, h2{
@@ -180,24 +284,53 @@ section, h2{
     position: relative;
 }
 
-.fig{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 20px;
-    /* vertical-align: top;
-    width: 200px; */
+section figcaption{
+    
 }
 
-figure img{
-    width: 100%;
-    height: auto;
+/* trip CSS */
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    margin: 15px;
 }
-.fig figcaption{
-    padding-top: 88px;
-    margin-right: 100px;
-    font-size: 15px;
+td, th{
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+thead tr{
+    background-color: rgb(224, 172, 240);
+    color: black;
+    font-weight: 600;
+    font-weight: bolder;
+}
+
+.trip{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.trip p{
+    border: 1px solid black;
+    margin: 5px;
+    height: 230px;
+    width: 250px;
+    padding: 6px;
+    border-radius: 0 30px;
+    background-color: rgb(224, 167, 241);
     
+}
+.trip h3{
+    text-align: center;
+}
+.trip img{
+    margin-left: 30px;
+}
+h3{
+    padding-top: 35px;
+    margin-left: 16px;
 }
