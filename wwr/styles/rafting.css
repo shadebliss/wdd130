@@ -120,7 +120,7 @@ header img{
 form {
     position: relative;
     /* border: 1px solid black; */
-    height: 330px;
+    height: 350px;
     padding: 15px;
     width: 350px;
     margin: 20px;
@@ -290,14 +290,16 @@ section figcaption{
 
 /* trip CSS */
 table{
+    table-layout: fixed;
     border: 2px solid black;
     border-collapse: collapse;
     letter-spacing: 1px;
-    margin: 15px;
+    margin: 15px auto;
+    /* width: 1%; */
 }
 td, th{
     border: 2px solid black;
-    padding: 10px;
+    padding: 0.3rem;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
