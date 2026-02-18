@@ -284,10 +284,6 @@ section, h2{
     position: relative;
 }
 
-section figcaption{
-    
-}
-
 /* trip CSS */
 table{
     table-layout: fixed;
@@ -336,6 +332,13 @@ h3{
     padding-top: 35px;
     margin-left: 16px;
 }
-.intro i{
-    color: rgb(144, 35, 35);
+.intro a{
+    text-decoration: none;
+    font-size: 18px;
 }
+.intro:hover a{
+    color: rgb(211, 12, 12);
+}
+/* .intro::after a{
+    color: rgb(17, 215, 46);
+} */
